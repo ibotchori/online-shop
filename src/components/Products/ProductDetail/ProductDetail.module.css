@@ -1,0 +1,154 @@
+.container {
+  width: 1238px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+}
+
+.smallImages {
+  margin-bottom: 20px;
+}
+
+.smallImages img {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.smallImages img:hover {
+  -webkit-box-shadow: -1px 3px 15px -2px #000000;
+  box-shadow: -1px 3px 15px -2px #c5c5c5;
+  cursor: pointer;
+}
+
+.bigImage {
+  margin-left: 20px;
+}
+
+.bigImage img {
+  width: 430px;
+  height: 430px;
+  object-fit: cover;
+}
+.productDetailsConteiner {
+  width: 292px;
+}
+
+.productDetailsConteiner h2 {
+  margin-bottom: 10px;
+}
+
+.productDetailsConteiner h3 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.sizes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sizes p {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.sizeBtnActive {
+  width: 57px;
+  height: 43px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: var(--black);
+  color: white;
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 10px;
+}
+
+.price {
+  font-weight: 700;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+.priceAmount {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cartBtn {
+  width: 292px;
+  height: 50px;
+  background-color: var(--primary-green);
+  color: white;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.description {
+  margin-top: 20px;
+  max-width: 292px;
+  word-wrap: break-word;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 748px) {
+  .container {
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .bigImage img {
+    object-fit: contain;
+  }
+
+  .imageContainer {
+    flex-direction: column;
+  }
+  .cartBtn {
+    width: 90%;
+  }
+
+  .productDetailsConteiner {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .smallImages img {
+    flex-direction: row;
+  }
+}
+
+.bigImage {
+  margin-left: 0;
+}
+
+@media (max-width: 348px) {
+  .bigImage img {
+    width: 200px;
+    object-fit: contain;
+  }
+}

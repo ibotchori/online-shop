@@ -1,0 +1,125 @@
+.cartContainer {
+  position: absolute;
+  background-color: white;
+  padding: 4px;
+  top: 0;
+  right: 37px;
+  width: 270px;
+  -webkit-box-shadow: -1px 3px 15px -2px #000000;
+  box-shadow: -1px 3px 15px -2px #e4e4e4;
+  transition: 0.3s ease;
+  z-index: 9;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+  padding: 7px;
+}
+
+.itemInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 24px;
+  padding: 7px;
+}
+
+.itemInfo p {
+  font-weight: 700;
+}
+
+.imagePreview {
+  display: flex;
+  align-items: center;
+}
+
+.imagePreview img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.itemDescription p {
+  font-weight: 300;
+  color: var(--black);
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.cartBtn {
+  width: 28px;
+  height: 28px;
+  outline: none;
+  margin-right: 7px;
+  border: 1px solid var(--black);
+  background-color: white;
+}
+
+.quantity button {
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--black);
+  background-color: white;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total p {
+  font-weight: 700;
+  padding: 7px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btns button {
+  margin: 10px;
+}
+
+.btns button {
+  width: 100px;
+  height: 40px;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.viewBtn {
+  background: #ffffff;
+  border: 1px solid #1d1f22;
+  cursor: pointer;
+}
+
+.viewBtn:hover {
+  background-color: var(--black);
+  color: white;
+}
+
+.checkBtn {
+  background: var(--primary-green);
+  border: 0;
+  cursor: pointer;
+  color: white;
+}
+
+.checkBtn:hover {
+  color: var(--primary-green);
+  background-color: white;
+  border: 1px solid var(--primary-green);
+}

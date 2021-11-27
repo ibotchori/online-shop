@@ -1,0 +1,22 @@
+.main {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  height: 170px;
+  right: 30px;
+  background-color: white;
+  z-index: 99;
+  -webkit-box-shadow: -1px 3px 15px -2px #000000;
+  box-shadow: -1px 3px 15px -2px #e4e4e4;
+  transition: 0.3s ease;
+}
+
+.currency:hover {
+  text-align: center;
+  width: 100%;
+  background-color: var(--primary-green);
+  transition: 0.3s ease;
+}

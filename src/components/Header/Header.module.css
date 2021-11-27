@@ -1,0 +1,79 @@
+.mainContainer {
+  width: 1238px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 9999;
+}
+
+.nav a {
+  outline: none;
+  text-decoration: none;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+
+.active {
+  color: var(--primary-green);
+  padding-bottom: 7px;
+  border-bottom: 3px solid var(--primary-green);
+}
+
+.links {
+  margin-left: 20px;
+
+  text-transform: uppercase;
+}
+
+.links a:hover {
+  color: var(--primary-green);
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links a:checked {
+  color: var(--black);
+}
+
+.links:first-child {
+  margin: 0;
+}
+
+.cartContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.currency {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.statusContainer {
+  position: relative;
+  right: 10px;
+  bottom: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--black);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
